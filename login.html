@@ -1,0 +1,239 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>The Third Eye - SN-01</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./static/police.css"></link>
+        <script src="./static/police.js" ></script>
+        <style>
+            body {
+              background-color: black;
+            }
+            .glow {
+             font-size: 80px;
+             color: rgb(181, 216, 110);
+             text-align: center;
+             -webkit-animation: glow 1s ease-in-out infinite alternate;
+             -moz-animation: glow 1s ease-in-out infinite alternate;
+             animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes glow {
+    from {
+         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+  
+     to {
+            text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+     }
+    }
+    input[type=submit] {
+ background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+input[type=button] {
+ background-color: #44a1ac; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+input[type=text] {
+  width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password]{
+  width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+            </style>
+    </head>
+    <script>
+      $( document ).ready(function() {
+    console.log( "ready!" );
+    $('button').removeClass('active');
+  $(this).addClass('active');
+  $('.light').attr('class', 'light caution');
+});
+function clearform() {
+        document.getElementById("loginform").reset();
+        document.getElementById('usr').value = '';
+    }
+    </script>
+    <body>
+       
+            <br>
+            <div class="lightbar" >
+                <div id="light-1" class="light strobe blue">
+                  <div class="inner-light"></div>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                </div>
+                <div id="light-2" class="light strobe blue">
+                  <div class="inner-light"></div>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                </div>
+                <div id="light-3" class="light strobe blue">
+                  <div class="inner-light"></div>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                </div>
+                <div id="light-4" class="light strobe red delay">
+                  <div class="inner-light"></div>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                </div>
+                <div id="light-5" class="light strobe red delay">
+                  <div class="inner-light"></div>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                </div>
+                <div id="light-6" class="light strobe red delay">
+                  <div class="inner-light"></div>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+                  <span class="bulb"></span>
+              
+                </div>
+              </div>
+              <center>
+            <div style="width:300px;">
+              <h4 class="glow">SN - 01</h4>
+            <form id="loginform" method="POST" action="http://localhost:5000/login">
+                
+                <input type="text" id="usr" class="form-control" name="username" placeholder="Username..."  />    
+                <br>
+                <input type="password" class="form-control" name="password" placeholder="Password..." id="pass" />
+                <br><br>
+                <input type="submit" value="Login" />
+                <br><br>
+                <input type="button" onClick="clearform()" value="Clear" />
+            </form>
+          
+        </div>
+        </center>
+        
+    </body>
+
+</html>
